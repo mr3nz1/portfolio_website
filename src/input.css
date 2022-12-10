@@ -21,3 +21,7 @@ body {
     content: "";
     @apply w-full;
 }
+
+.project-container:hover .project-layer {
+    @apply h-full;
+}
