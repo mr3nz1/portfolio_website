@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.hover-text {
+    @apply relative;
+}
+
+.hover-text::after {
+    content: "";
+    @apply absolute left-0 bottom-0 h-1 w-0 text-sky-500 bg-sky-500 transition-all duration-300;
+}
+
+.hover-text:hover::after {
+    content: "";
+    @apply w-full;
+}
