@@ -14,7 +14,7 @@ body {
 
 .hover-text::after {
     content: "";
-    @apply absolute left-0 bottom-0 h-1 w-0 text-sky-500 bg-sky-500 transition-all duration-300;
+    @apply absolute left-0 bottom-0 h-1 w-0 text-sky-500 bg-sky-500 transition-all duration-300
 }
 
 .hover-text:hover::after {
@@ -23,5 +23,9 @@ body {
 }
 
 .project-container:hover .project-layer {
+    @apply h-full;
+}
+
+.project-container:focus .project-layer {
     @apply h-full;
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Hero() {
+function Hero(props) {
+  const { refVal } = props
+
   return (
-    <div className='container mx-auto flex justify-between py-10 px-10 mt-0 md:my-10 items-center'>
+    <div ref={ refVal } className='container mx-auto flex justify-between py-10 px-10 mt-0 md:my-10 items-center'>
         <div className="flex flex-col space-y-4">
             <p className="">Frontend/Backend Web Developer</p>
 

@@ -1,10 +1,11 @@
 import React from 'react'
 
-function WhoIam() {
+function WhoIam(props) {
+    const { refVal } = props
     const [currentTab, setCurrentTab] = React.useState(1);
 
     return (
-        <div className="container mx-auto flex flex-col space-y-6 md:space-y-0 md:flex-row md:justify-between md:space-x-20 py-10 mt-0 md:my-10 items-start px-10">
+        <div ref={ refVal } className="container mx-auto flex flex-col space-y-6 md:space-y-0 md:flex-row md:justify-between md:space-x-20 py-10 mt-0 md:my-10 items-start px-10">
             <div className='rounded-2xl w-72 md:w-96 h-96 bg-sky-500'></div>
 
             <div className='w-full md:w-1/2 flex flex-col space-y-4'>
